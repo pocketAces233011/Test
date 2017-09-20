@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tondhy.test.Fragment_Activity">
+
+    <Button
+        android:id="@+id/buttonTo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="changeFragment"
+        android:text="Frangment1" />
+
+    <Button
+        android:id="@+id/buttonTo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="changeFragment"
+        android:text="Fragment2" />
+
+
+    <fragment
+        android:name="com.example.tondhy.test.Fragment1"
+        android:id="@+id/details_fragment"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
